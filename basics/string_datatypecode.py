@@ -30,3 +30,19 @@ log_start_index = para1.index("/mnt/logs/")
 log_end_index = para1.index('.log')
 print(para1[log_start_index:log_end_index+4])
 print(para2[para2.index("/mnt/log"):para2.index(".log")+4])
+
+alphabets = 'abcdefghijklmnopqrstuvwxyz'
+print(len(alphabets))
+print(alphabets[3:8])
+print(alphabets[8:3]) # return blank string
+print(type(alphabets[8:3]))
+print(alphabets[8:3:-1])
+
+# to print 1st char to upper
+print(alphabets[0].upper()+alphabets[1:])
+
+# to print last char to upper
+print(alphabets[0:len(alphabets)-1]+alphabets[len(alphabets)-1].upper())
+
+print("ABC "*3) # here * is called repetition operator
+print(3*"ABC_")
